@@ -23,7 +23,7 @@ button.addEventListener('click', () => {
         result.innerHTML = Number(num) * 10000 + currency2.value
     }
     if (first === "KM" && second === "MM") {
-        result.innetHTML = Number(num) * 1000 + currency2.value
+        result.innerHTML = Number(num) * 1000 + currency2.value
     }
     if (first === "SM" && second === "MM") {
         result.innerHTML = Number(num) * 10 + currency2.value
@@ -42,7 +42,7 @@ button.addEventListener('click', () => {
         result.innerHTML = Number(num) * 100 + currency2.value
     }
     if (first === "KM" && second === "SM") {
-        result.innetHTML = Number(num) * 100000 + currency2.value
+        result.innerHTML = Number(num) * 100000 + currency2.value
     }
     if (first === "KM" && second === "M") {
         result.innerHTML = Number(num) * 1000 + currency2.value
@@ -75,10 +75,28 @@ switchButton.addEventListener('click', () => {
         result.innerHTML = Number(num) * 100 + currency2.value
     }
     if (first === "KM" && second === "MM") {
-        result.innetHTML = Number(num) * 1000 + currency2.value
+        result.innerHTML = Number(num) * 1000 + currency2.value
     }
     if (first === "SM" && second === "MM") {
         result.innerHTML = Number(num) * 10 + currency2.value
+    }
+    if (first === "SM" && second === "M") {
+        result.innerHTML = Number(num) / 100 + currency2.value
+    }
+    if (first === "SM" && second === "KM") {
+        result.innerHTML = Number(num) / 100000 + currency2.value
+    }
+    if (first === "M" && second === "KM") {
+        result.innerHTML = Number(num) / 1000 + currency2.value
+    }
+    if (first === "M" && second === "SM") {
+        result.innerHTML = Number(num) * 100 + currency2.value
+    }
+    if (first === "KM" && second === "SM") {
+        result.innerHTML = Number(num) * 100000 + currency2.value
+    }
+    if (first === "KM" && second === "M") {
+        result.innerHTML = Number(num) * 1000 + currency2.value
     }
 
 
